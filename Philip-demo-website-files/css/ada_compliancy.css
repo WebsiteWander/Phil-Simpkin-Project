@@ -686,8 +686,27 @@ img {
   padding-bottom: 2rem;
 }
 
+/* Miscellaneous Code */
 .center-text {
-  text-align: center;
+  text-align: center !important;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.extra-padding_1 {
+  padding-top: 1rem !important;
+  padding-bottom: 0.8rem !important;
+}
+
+.extra-padding_2 {
+  padding-top: 2rem !important;
+  padding-bottom: 0 !important;
+}
+
+.extra-padding_3 {
+  padding-top: 3rem !important;
 }
 
 /* Phone Sizing */
