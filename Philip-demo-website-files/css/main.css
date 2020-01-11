@@ -174,11 +174,11 @@ input[class^="btn-"]:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0;
+  opacity: 0; /* Custom Change? */
   text-align: center;
   z-index: 1;
   color: #fff;
-  transform: translateY(-20%);
+  transform: translateY(-20%); /* Custom Change? */
   transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
     transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
   transition-delay: 300ms;
