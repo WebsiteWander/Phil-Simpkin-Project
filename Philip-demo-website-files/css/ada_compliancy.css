@@ -30,9 +30,9 @@
   background-color: #333;
 }
 
-button[class^='btn-']:hover,
-a[class^='btn-']:hover,
-input[class^='btn-']:hover {
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
   background-color: #ffbc00;
 }
 
@@ -122,11 +122,12 @@ input[class^='btn-']:hover {
 
 .item {
   position: relative;
-  background: #ffbc00;
+  /* background: #ffbc00; */
+  background: #802200;
   overflow: hidden;
 }
 .item::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   background: inherit;
@@ -155,7 +156,7 @@ input[class^='btn-']:hover {
   transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
 }
 .item-image:before {
-  content: '';
+  content: "";
   display: block;
   padding-top: 75%;
   overflow: hidden;
@@ -174,11 +175,11 @@ input[class^='btn-']:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0;
+  opacity: 0; /* Custom Change? */
   text-align: center;
   z-index: 1;
   color: #fff;
-  transform: translateY(-20%);
+  transform: translateY(-20%); /* Custom Change? */
   transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
     transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
   transition-delay: 300ms;
@@ -207,7 +208,7 @@ input[class^='btn-']:hover {
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   line-height: 1.6;
   background: #fff;
 }
@@ -236,6 +237,8 @@ img {
   height: 70px;
   color: #fff;
   text-transform: uppercase;
+  visibility: hidden;
+  /* Hide the logo, but keep the space */
 }
 
 #main-nav {
@@ -265,7 +268,7 @@ img {
 }
 
 #header-home {
-  background: url('../img/showcase.jpg') no-repeat center right/cover;
+  background: url("../img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff;
 }
@@ -279,7 +282,7 @@ img {
 }
 
 #header-inner {
-  background: url('../img/showcase.jpg') no-repeat 20% 30% / cover;
+  background: url("../img/showcase.jpg") no-repeat 20% 30% / cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00;
 }
@@ -365,8 +368,8 @@ img {
 #about-a .about-info {
   display: grid;
   grid-template-areas:
-    'bioimage bio bio'
-    'aw1 aw2 aw3';
+    "bioimage bio bio"
+    "aw1 aw2 aw3";
   grid-gap: 1.2rem;
 }
 
@@ -448,9 +451,9 @@ img {
 #contact-a .text-fields {
   display: grid;
   grid-template-areas:
-    'name email'
-    'subject phone'
-    'message message';
+    "name email"
+    "subject phone"
+    "message message";
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem;
 }
@@ -474,7 +477,7 @@ img {
   padding: 0.5rem 1rem;
 }
 
-#contact-a button[type='submit'] {
+#contact-a button[type="submit"] {
   width: 50%;
 }
 
@@ -515,7 +518,7 @@ img {
 }
 
 .main-footer-link {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* Dynamic Copyright Code */
@@ -577,22 +580,22 @@ img {
   }
   #about-a .about-info {
     grid-template-areas:
-      'bioimage'
-      'bio'
-      'aw1'
-      'aw2'
-      'aw3';
+      "bioimage"
+      "bio"
+      "aw1"
+      "aw2"
+      "aw3";
   }
   #about-c {
     display: none;
   }
   #contact-a .text-fields {
     grid-template-areas:
-      'name'
-      'subject'
-      'email'
-      'phone'
-      'message';
+      "name"
+      "subject"
+      "email"
+      "phone"
+      "message";
   }
   #contact-b div {
     margin-bottom: 1rem;
@@ -617,28 +620,16 @@ img {
   }
 }
 
-@media (max-height: 580px) {
-  #header-home .header-content {
-    padding-top: 3rem;
-  }
-}
-
-@media (max-height: 330px) {
-  #header-home .header-content h1 {
-    font-size: 2rem;
-  }
-}
-
 /* Ada-Compliancy Only Code */
 
 /* "I am John the Photographer" */
 .color_contrast_1 {
-  color: #802200;
+  color: #802200 !important;
 }
 
 /* "I specialize in graphic design" */
 .color_contrast_2 {
-  color: #802200;
+  color: #802200 !important;
 }
 
 /* Links: Home, About, Work, Contact */
@@ -653,4 +644,86 @@ img {
 
 .color_contrast_5 {
   color: #000000 !important;
+}
+
+.color_contrast_6 {
+  color: #ffffff;
+}
+
+/* Nav links color on Computer screen */
+.color_contrast_7 {
+  color: #00e0e0 !important;
+}
+
+.color_contrast_8 {
+  color: #ffbc00 !important;
+}
+
+/* Nav links color on Phone screens */
+.color_contrast_9 {
+  color: #b50000 !important;
+}
+
+.back_check {
+  background-color: #545454;
+}
+
+/* Font Changes */
+
+/* Change h2 size */
+.font_change_1 {
+  font-size: 1.65rem;
+}
+
+/* Change h4 size */
+.font_change_2 {
+  font-size: 1.5rem;
+}
+
+/* Spacing Changes */
+.h1_spacing_1 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* Phone Sizing */
+
+@media (max-height: 812px) {
+  #header-home .header-content h1 {
+    font-size: 2rem;
+  }
+  .heavy {
+    font-weight: 1000;
+  }
+  .color_contrast_5 {
+    color: #0f4880 !important;
+  }
+}
+
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 3rem;
+  }
+  .heavy {
+    font-weight: 600;
+  }
+  .color_contrast_5 {
+    color: #800080 !important;
+  }
+}
+
+@media (max-height: 330px) {
+  #header-home .header-content h1 {
+    font-size: 2rem;
+  }
+  .heavy {
+    font-weight: 600;
+  }
+  .color_contrast_5 {
+    color: #800080 !important;
+  }
 }
