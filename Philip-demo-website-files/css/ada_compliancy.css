@@ -721,6 +721,12 @@ img {
   .color_contrast_5 {
     color: #0f4880 !important;
   }
+  .hide_for_phone_only {
+    display: none;
+  }
+  .footer-content p {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-height: 580px) {
@@ -733,6 +739,12 @@ img {
   .color_contrast_5 {
     color: #800080 !important;
   }
+  .hide_for_phone_only {
+    display: none;
+  }
+  .footer-content p {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-height: 330px) {
@@ -744,5 +756,13 @@ img {
   }
   .color_contrast_5 {
     color: #800080 !important;
+  }
+  .hide_for_phone_only {
+    display: none;
+  }
+
+  /* fix when you can */
+  .footer-content p {
+    font-size: 0.8rem;
   }
 }
