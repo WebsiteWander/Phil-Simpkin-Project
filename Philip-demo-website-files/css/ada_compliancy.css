@@ -668,15 +668,20 @@ img {
   background-color: #545454;
 }
 
-/* Font Changes */
+/* Font Size Changes */
 
 /* Change h2 size */
-.font_change_1 {
+.font_size_change_1 {
   font-size: 1.65rem;
 }
 
+/* Change h3 size */
+.font_size_change_2 {
+  font-size: 1.17em;
+}
+
 /* Change h4 size */
-.font_change_2 {
+.font_size_change_3 {
   font-size: 1.5rem;
 }
 
