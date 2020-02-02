@@ -714,6 +714,14 @@ img {
   padding-top: 3rem !important;
 }
 
+.extra-padding_4 {
+  padding: 0.8rem 1.7rem !important;
+}
+
+.show-on-iphone-only {
+  display: none;
+}
+
 /* Phone Sizing */
 
 @media (max-height: 812px) {
@@ -731,6 +739,15 @@ img {
   }
   .footer-content p {
     font-size: 0.8rem;
+  }
+  .show-on-iphone-only {
+    display: inline-block;
+  }
+  #main-footer {
+    height: 5rem;
+  }
+  .favorite-quotes-size-change_1 {
+    font-size: 1.15rem !important;
   }
 }
 
@@ -750,6 +767,15 @@ img {
   .footer-content p {
     font-size: 0.8rem;
   }
+  .show-on-iphone-only {
+    display: inline-block;
+  }
+  #main-footer {
+    height: 5rem;
+  }
+  .favorite-quotes-size-change_1 {
+    font-size: 1.15rem !important;
+  }
 }
 
 @media (max-height: 330px) {
@@ -764,6 +790,15 @@ img {
   }
   .hide_for_phone_only {
     display: none;
+  }
+  .show-on-iphone-only {
+    display: inline-block;
+  }
+  #main-footer {
+    height: 5rem;
+  }
+  .favorite-quotes-size-change_1 {
+    font-size: 1.15rem !important;
   }
 
   /* fix when you can */
