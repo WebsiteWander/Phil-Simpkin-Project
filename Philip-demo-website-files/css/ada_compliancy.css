@@ -720,6 +720,10 @@ img {
   padding: 0.8rem 1.7rem !important;
 }
 
+.extra-padding_5 {
+  padding-top: 1rem;
+}
+
 .show-on-iphone-only {
   display: none;
 }
@@ -751,8 +755,20 @@ img {
   .favorite-quotes-size-change_1 {
     font-size: 1.15rem !important;
   }
+
+  /* Boxsizing: Border-Box change, to fix a white */
+  /* space issue on the footer for phone sizes */
+  .border-box_change {
+    box-sizing: border-box;
+  }
+
+  /* Takes away bottom padding of the footer on phones */
+  #main-footer .footer-content {
+    flex-direction: row;
+  }
 }
 
+/* iPhone 5/SE - Small Size */
 @media (max-height: 580px) {
   #header-home .header-content {
     padding-top: 3rem;
@@ -767,7 +783,7 @@ img {
     display: none;
   }
   .footer-content p {
-    font-size: 0.8rem;
+    font-size: 0.69rem;
   }
   .show-on-iphone-only {
     display: inline-block;
@@ -777,6 +793,17 @@ img {
   }
   .favorite-quotes-size-change_1 {
     font-size: 1.15rem !important;
+  }
+
+  /* Boxsizing: Border-Box change, to fix a white */
+  /* space issue on the footer for phone sizes */
+  .border-box_change {
+    box-sizing: border-box;
+  }
+
+  /* Takes away bottom padding of the footer on phones */
+  #main-footer .footer-content {
+    flex-direction: row;
   }
 }
 
@@ -805,6 +832,17 @@ img {
 
   /* fix when you can */
   .footer-content p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  /* Boxsizing: Border-Box change, to fix a white */
+  /* space issue on the footer for phone sizes */
+  .border-box_change {
+    box-sizing: border-box;
+  }
+
+  /* Takes away bottom padding of the footer on phones */
+  #main-footer .footer-content {
+    flex-direction: row;
   }
 }
