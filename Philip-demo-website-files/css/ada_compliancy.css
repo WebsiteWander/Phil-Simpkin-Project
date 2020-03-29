@@ -710,8 +710,10 @@ img {
   padding-bottom: 0 !important;
 }
 
+/* Changed this from 3rem to 7.1rem in order to get rid of */
+/* white space at the bottom when this is shown on big screens */
 .extra-padding_3 {
-  padding-top: 3rem !important;
+  padding-top: 7.1rem !important;
 }
 
 .extra-padding_4 {
